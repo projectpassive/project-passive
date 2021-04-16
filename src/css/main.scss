@@ -150,6 +150,7 @@
   }
 
   .hero {
+    margin: 150px auto;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -161,7 +162,7 @@
     font-style: italic;
   }
   
-  .hero, .container, .skills, .contact {
+  .container, .skills, .contact {
     margin: 150px auto;
   }
   
@@ -532,7 +533,7 @@
   
   h1 {
     font-weight: 700;
-    font-size: 34px;
+    font-size: 36px;
   }
   
   .home h1 {
