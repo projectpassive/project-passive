@@ -139,6 +139,34 @@
   }
   
   // Body //
+
+  .flex-box {
+    background: #f7f9fb;
+    display: flex;
+    width: 100vw;
+    min-height: 300px;
+    border-top: 1px solid rgba(12,21,46,.08);    
+  }
+
+  .right-image {
+    flex: 1;
+    background: url(../assets/amazon-center.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .left-text {
+    text-align: left;
+    padding: 5vw;
+  }
   
   .home-page {
     overflow-x: hidden;
@@ -168,14 +196,16 @@
   .section-one {
     background: #f7f9fb;
     display: flex;
+    align-items: center;
     justify-content: center;
+    padding: 0px 0px;
   }
 
   .section-one, .section-two, .footer {
     border-top: 1px solid rgba(12,21,46,.08);
   }
 
-  .section-one, .section-two {
+  .section-two {
     padding: 50px 0px;
   }
 
@@ -187,8 +217,14 @@
     opacity: 1;
   }
 
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .wrapper {
-    max-width: 700px;
+    max-width: 1000px;
   }
 
   .logo-box {
@@ -204,6 +240,26 @@
     margin-left: 40px;
     margin-right: 40px;
     opacity: .4;
+  }
+
+  .sidebar {
+    display: flex;
+    align-items: flex-start; /* Fixes Safari bug stretching images beyond container */
+    justify-content: center;
+    flex: 1;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .text {
+    text-align: left;
+    margin: 0px 7vw;
+  }
+  
+  .content {
+    flex: 1;
   }
   
   .small {
@@ -325,33 +381,36 @@
     }
   }
   
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1168px) {
   
     .home, .sections, .blogs {
       max-width: 80vw;
+    }
+
+    .flex-container {
+      display: inline;
+    }
+  
+    .text {
+      margin: 0px;
+      padding: 20px;
     }
     
   }
   
   @media only screen and (max-width: 800px) {
-  
-  .container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+  .text {
+    margin: 0px;
+    padding: 20px;
   }
-  
-  .art {
-    display: flex;
+
+  .flex-box {
     flex-direction: column;
-    margin-bottom: 75px;
-    img {
-      height: 180px;
-    }
-    &:last-child {
-      margin-bottom: 0px;
-    }
+  }
+
+  .right-image {
+    min-height: 300px;
   }
   
   }
@@ -390,6 +449,14 @@
     font-weight: 700;
   }
   
+  .flex-container {
+    display: inline;
+  }
+
+  .text {
+    margin: 0px;
+    padding: 20px;
+  }
   
   }
   
