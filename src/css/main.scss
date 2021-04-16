@@ -147,14 +147,63 @@
   h1 {
     font-size: 44px;
     font-weight: 900;
+    color: rgb(15, 50, 86);
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    //color: rgb(15, 50, 86);
   }
 
   .hero {
-    margin: 150px auto;
-    height: 300px;
+    margin: 100px auto;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .section-one {
+    background: #f7f9fb;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-one, .section-two, .footer {
+    border-top: 1px solid rgba(12,21,46,.08);
+  }
+
+  .section-one, .section-two {
+    padding: 50px 0px;
+  }
+
+  .section-two {
+    border-bottom: 1px solid rgba(12,21,46,.08);
+  }
+
+  .section-two h2 {
+    opacity: 1;
+  }
+
+  .wrapper {
+    max-width: 700px;
+  }
+
+  .logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .drop-logo {
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    opacity: .4;
   }
   
   .small {
@@ -265,10 +314,10 @@
   // Footer //
   
   .footer {
-    margin-top: 80px;
+    margin-top: 0px;
     width: 100%;
     padding: 15px;
-    background: rgba($color: #000000, $alpha: 0.05);
+    background: #f7f9fb;
     p {
       font-size: 12px;
       font-weight: 300;
