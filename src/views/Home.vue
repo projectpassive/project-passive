@@ -3,25 +3,6 @@
     <div class="hero">
       <h1>Start earning passive income today.</h1>
     </div>
-   <!-- <div class="section-one">
-      <div class="flex-container">
-
-        <div class="content">
-          <section class="text">
-            <h2>What We Do</h2><br>
-            <p>Project Passive was created to provide its clients with a simple stream of passive income.
-            We employ a team that automates the entire dropshipping flow between Amazon, Walmart, and Shopify - leaving you with as minimal work as possible.
-            <br><br>We are here to help you with every step of the journey. We take care of everything from LLC creation
-            to getting through the rigorous application process with Walmart and Amazon.</p>
-          </section>
-        </div>
-
-        <section class="sidebar">
-          <img class="img" src="@/assets/amazon-center.jpeg" alt="">
-        </section>
-
-      </div>
-    </div> -->
 
     <div class="flex-box">
       <div class="left-box">

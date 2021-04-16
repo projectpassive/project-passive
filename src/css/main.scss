@@ -25,6 +25,25 @@
       background-color: #00ffa21a;
     }
   }
+
+  // Typography //
+
+  .section-two h2 {
+    opacity: 1;
+  }
+
+  h1 {
+    font-size: 44px;
+    font-weight: 900;
+    color: rgb(15, 50, 86);
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    //color: rgb(15, 50, 86);
+  }
   
  /* .theme-dark {
     transition: ease-in .2s;
@@ -111,31 +130,9 @@
     }
   }
 
-  .logo-light {
+  .logo {
     width: 300px;
     padding-top: 20px;
-  }
-  
-  .logo {
-    color: #000;
-    font-size: 30px;
-    font-weight: 500;
-  
-    span {
-      font-weight: 900;
-      color: #537DFE;
-    }
-  }
-  
-  .nav-links {
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .theme-switcher {
-    display: flex;
-    margin-right: 25px;
   }
   
   // Body //
@@ -171,19 +168,6 @@
   .home-page {
     overflow-x: hidden;
   }
-  
-  h1 {
-    font-size: 44px;
-    font-weight: 900;
-    color: rgb(15, 50, 86);
-  }
-
-  h2 {
-    font-size: 30px;
-    font-weight: 900;
-    margin-bottom: 5px;
-    //color: rgb(15, 50, 86);
-  }
 
   .hero {
     margin: 100px auto;
@@ -213,20 +197,6 @@
     border-bottom: 1px solid rgba(12,21,46,.08);
   }
 
-  .section-two h2 {
-    opacity: 1;
-  }
-
-  .flex-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .wrapper {
-    max-width: 1000px;
-  }
-
   .logo-box {
     display: flex;
     align-items: center;
@@ -241,76 +211,11 @@
     margin-right: 40px;
     opacity: .4;
   }
-
-  .sidebar {
-    display: flex;
-    align-items: flex-start; /* Fixes Safari bug stretching images beyond container */
-    justify-content: center;
-    flex: 1;
-  }
-
-  .img {
-    width: 100%;
-  }
-
-  .text {
-    text-align: left;
-    margin: 0px 7vw;
-  }
   
-  .content {
-    flex: 1;
-  }
-  
-  .small {
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .container, .skills, .contact {
+  .contact {
     margin: 150px auto;
   }
-  
-  .container {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .art {
-    max-width: 320px;
-    padding: 0px 20px;
-    img {
-      height: 15vw;
-      max-height: 200px;
-    }
-    p {
-      margin-top: 20px;
-      font-size: 16px;
-      font-weight: 500;
-    }
-  }
-  
-  .skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    h1 {
-      margin: 0;
-    }
-    p {
-      font-size: 16px;
-      font-weight: 500;
-      margin: 20px 0;
-    }
-    img {
-      margin: 5px;
-      height: 50px;
-    }
-  }
-  
+
   .max {
     max-width: 1200px;
   }
@@ -386,24 +291,10 @@
     .home, .sections, .blogs {
       max-width: 80vw;
     }
-
-    .flex-container {
-      display: inline;
-    }
-  
-    .text {
-      margin: 0px;
-      padding: 20px;
-    }
     
   }
   
   @media only screen and (max-width: 800px) {
-
-  .text {
-    margin: 0px;
-    padding: 20px;
-  }
 
   .flex-box {
     flex-direction: column;
@@ -434,11 +325,11 @@
   }
   
   .hero, .container, .skills, .contact {
-    margin: 125px auto;
+    margin: 100px auto;
   }
   
   .navbar {
-    margin-top: 25px;
+    margin-top: 20px;
     flex-direction: column;
     a {
       font-weight: 500;
