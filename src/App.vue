@@ -3,9 +3,6 @@
     <div class="topline" />
     <div class="navbar max">
       <img class="logo-light" src="@/assets/logo-wide-light.svg">
-      <!-- <div class="nav-links">
-        <theme-switcher :theme="theme" class="theme-switcher" @themeChanged="updateTheme" />
-      </div> -->
     </div>
     <router-view/>
     <Footer/>
@@ -13,12 +10,10 @@
 </template>
 
 <script>
-// import ThemeSwitcher from '@/components/ThemeSwitcher'
 import Footer from '@/components/Footer'
 
 export default {
   components: {
-    // ThemeSwitcher,
     Footer,
   },
   mounted() {
