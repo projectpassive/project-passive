@@ -1,32 +1,43 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" :class="theme">
+    <div class="topline" />
+    <div class="navbar max">
+      <img class="logo-light" src="@/assets/logo-wide-light.svg">
+      <!-- <div class="nav-links">
+        <theme-switcher :theme="theme" class="theme-switcher" @themeChanged="updateTheme" />
+      </div> -->
     </div>
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// import ThemeSwitcher from '@/components/ThemeSwitcher'
+import Footer from '@/components/Footer'
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  components: {
+    // ThemeSwitcher,
+    Footer,
+  },
+  mounted() {
+    this.theme = localStorage.getItem('theme') || 'theme-light'
+  },
+  data() {
+    return {
+      theme: '',
+    }
+  },
+  methods: {
+    toggle() {
+      this.isOpen = !this.isOpen
+    },
+    updateTheme(theme) {
+      this.theme = theme
     }
   }
 }
-</style>
+</script>
+
+<style src="@/css/main.scss" lang="scss" />
