@@ -16,23 +16,9 @@ export default {
   components: {
     Footer,
   },
-  mounted() {
-    this.theme = localStorage.getItem('theme') || 'theme-light'
-  },
-  data() {
-    return {
-      theme: '',
-    }
-  },
-  methods: {
-    toggle() {
-      this.isOpen = !this.isOpen
-    },
-    updateTheme(theme) {
-      this.theme = theme
-    }
-  }
+
 }
+
 </script>
 
 <style src="@/css/main.scss" lang="scss" />
