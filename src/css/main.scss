@@ -38,7 +38,7 @@
     font-size: 30px;
     font-weight: 900;
     margin-bottom: 5px;
-    //color: rgb(15, 50, 86);
+    color: rgb(15, 50, 86);
   }
   
  /* .theme-dark {
@@ -199,9 +199,6 @@
   .section-two {
     padding: 50px 0px;
     border-bottom: 1px solid rgba(12,21,46,.08);
-    h2 {
-      color: #9BA6B2;
-    }
   }
 
   .section-one, .section-two, .footer {
@@ -224,6 +221,9 @@
   
   .contact {
     margin: 150px auto;
+    h2 {
+      margin-bottom: 20px;
+    }
   }
 
   .max {
@@ -339,7 +339,7 @@
   .logo {
     margin-top: 0;
     margin-bottom: 20px;
-    width: 200px;
+    width: 230px;
   }
   
   .container, .skills, .contact {

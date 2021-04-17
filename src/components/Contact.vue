@@ -1,6 +1,6 @@
 <template>
 <div class="contact max">
-    <h1>Contact</h1>
+    <h2>Contact</h2>
     <form name="Contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact" />
         <input type="text" name="name" placeholder="Name"/>   
