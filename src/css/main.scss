@@ -28,10 +28,6 @@
 
   // Typography //
 
-  .section-two h2 {
-    opacity: 1;
-  }
-
   h1 {
     font-size: 44px;
     font-weight: 900;
@@ -137,6 +133,26 @@
   
   // Body //
 
+  .home-page {
+    overflow-x: hidden;
+  }
+
+  .hero {
+    background: linear-gradient(0deg,#0c152e 25%,#101c3d 95%);
+  }
+
+  .splash {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: white;
+      font-size: 65px;
+      max-width: 800px;
+    }
+  }
+
   .flex-box {
     background: #f7f9fb;
     display: flex;
@@ -166,18 +182,6 @@
     padding: 5vw;
     max-width: 800px;
   }
-  
-  .home-page {
-    overflow-x: hidden;
-  }
-
-  .hero {
-    margin: 100px auto;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .section-one {
     background: #f7f9fb;
@@ -187,16 +191,21 @@
     padding: 0px 0px;
   }
 
-  .section-one, .section-two, .footer {
-    border-top: 1px solid rgba(12,21,46,.08);
+  .bar {
+    border: 4px solid #537DFE;
+    width: 100px;
   }
 
   .section-two {
     padding: 50px 0px;
+    border-bottom: 1px solid rgba(12,21,46,.08);
+    h2 {
+      color: #9BA6B2;
+    }
   }
 
-  .section-two {
-    border-bottom: 1px solid rgba(12,21,46,.08);
+  .section-one, .section-two, .footer {
+    border-top: 1px solid rgba(12,21,46,.08);
   }
 
   .logo-box {
@@ -207,11 +216,10 @@
   }
 
   .drop-logo {
-    height: 30px;
+    height: 35px;
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
-    opacity: .4;
   }
   
   .contact {
@@ -222,9 +230,7 @@
     max-width: 1200px;
   }
   
-  
-  
-  
+
   
   // Contact //
   
@@ -305,6 +311,15 @@
   .right-image {
     min-height: 300px;
   }
+
+  .splash {
+    height: 60vh;
+    h1 {
+      padding: 0px 30px;
+      text-align: left;
+      font-size: 40px;
+    }
+  }
   
   }
   
@@ -326,16 +341,8 @@
     margin-bottom: 20px;
   }
   
-  .hero, .container, .skills, .contact {
+  .container, .skills, .contact {
     margin: 100px auto;
-  }
-  
-  .navbar {
-    margin-top: 20px;
-    flex-direction: column;
-    a {
-      font-weight: 500;
-    }
   }
   
   h2 span {

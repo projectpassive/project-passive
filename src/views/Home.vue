@@ -1,12 +1,18 @@
 <template>
   <div class="home-page">
     <div class="hero">
-      <h1>Start earning passive income today.</h1>
+      <div class="navbar max">
+        <img class="logo" src="@/assets/logo-wide-light.svg">
+      </div>
+      <div class="splash">
+        <h1>Start earning passive income today.</h1>
+      </div>
     </div>
 
     <div class="flex-box">
       <div class="left-box">
         <div class="left-text">
+          <!-- <div class="bar"></div> -->
           <h2>What We Do</h2><br>
           <p>Project Passive was created to provide its clients with a simple stream of passive income.
           We employ a team that automates the entire dropshipping flow between Amazon, Walmart, and Shopify - leaving you with as minimal work as possible.
@@ -22,9 +28,9 @@
     <div class="section-two">
       <h2>Dropshipping Partners</h2>
       <div class="logo-row">
-        <img class="drop-logo" src="@/assets/amazon_logo.svg" alt="Amazon Logo">
-        <img class="drop-logo" src="@/assets/shopify-logo.svg" alt="Shopify Logo">
-        <img class="drop-logo" src="@/assets/walmart_logo.svg" alt="Walmart Logo">
+        <img class="drop-logo" src="@/assets/amazon.svg" alt="Amazon Logo">
+        <img class="drop-logo" src="@/assets/shopify.svg" alt="Shopify Logo">
+        <img class="drop-logo" src="@/assets/walmart.svg" alt="Walmart Logo">
       </div>
     </div>
     <Contact/>

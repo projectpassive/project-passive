@@ -1,9 +1,9 @@
 <template>
   <div id="app" :class="theme">
-    <div class="topline" />
-    <div class="navbar max">
+    <!-- <div class="topline" /> -->
+    <!-- <div class="navbar max">
       <img class="logo" src="@/assets/logo-wide-blue.svg">
-    </div>
+    </div> -->
     <router-view/>
     <Footer/>
   </div>
